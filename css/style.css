@@ -1,0 +1,153 @@
+/* adding fonts */
+@font-face {
+  font-family: JosefinSans-Bold;
+  src: url('/fonts/JosefinSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: JosefinSans-Thin;
+  src: url('/fonts/JosefinSans-Thin.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-ExtraLight;
+  src: url('/fonts/Montserrat-ExtraLight.otf');
+}
+
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url('/fonts/Montserrat-SemiBold.otf');
+}
+
+/* style body */
+body {
+  padding-top: 56px;
+}
+
+/* style navbar */
+.navbar {
+  background-color: #0b486b;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, .25), inset 0 -1px 5px rgba(0, 0, 0, .25);
+}
+
+.navbar-brand {
+  font-family: JosefinSans-Bold;
+  font-weight: bold;
+}
+
+.nav-item {
+  font-family: JosefinSans-Thin;
+}
+
+.nav-item a {
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.nav-item a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.nav-item a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+@media screen and (max-height: 300px) {
+  .nav-item ul {
+    margin-top: 40px;
+  }
+}
+
+/* style carousel */
+.carousel {
+  -webkit-box-shadow: 0px 0px 0px 6px rgba(11, 72, 107, 1);
+  -moz-box-shadow: 0px 0px 0px 6px rgba(11, 72, 107, 1);
+  box-shadow: 0px 0px 0px 6px rgba(11, 72, 107, 1);
+
+  border-radius: 18px 18px 18px 18px;
+  -moz-border-radius: 18px 18px 18px 18px;
+  -webkit-border-radius: 18px 18px 18px 18px;
+  border: 0px solid #000000;
+}
+
+.carousel img {
+  border-radius: 18px 18px 18px 18px;
+  -moz-border-radius: 18px 18px 18px 18px;
+  -webkit-border-radius: 18px 18px 18px 18px;
+  border: 0px solid #000000;
+}
+
+/* styling text hotel web */
+.btn {
+  background-color: #3b8686;
+}
+
+.col-lg-5 h1 {
+  font-family: JosefinSans-Bold;
+  color: #3b8686;
+}
+
+.col-lg-5 p {
+  font-family: Montserrat-ExtraLight;
+}
+
+/* facilities style */
+.facilities {
+  font-family: Montserrat-SemiBold;
+}
+
+.card {
+  -webkit-box-shadow: 1px 2px 9px 0px rgba(115, 115, 115, 1);
+  -moz-box-shadow: 1px 2px 9px 0px rgba(115, 115, 115, 1);
+  box-shadow: 1px 2px 9px 0px rgba(115, 115, 115, 1);
+}
+
+.card {
+  opacity: .5;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+}
+
+.card p {
+  font-family: Montserrat-ExtraLight;
+}
+
+.card:hover {
+  opacity: 1;
+}
+
+footer .row p {
+  font-size: 15px;
+  height: 100px;
+}
+
+footer h4 {
+  font-family: JosefinSans-Thin;
+}
+
+footer p {
+  font-family: Montserrat-ExtraLight;
+}
+
+.text-white {
+  background: #0b486b;
+}
+
+.text-white p {
+  font-family: Montserrat-ExtraLight;
+}
